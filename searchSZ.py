@@ -22,7 +22,7 @@ while True:
                 print('Tweet por: @' + tweet.user.screen_name)
                 tweet.retweet()
                 print('Retweet feito com sucesso.')
-                resposta = "Olá @" + tweet.user.screen_name + ", te pegamos no flagra haha. Obrigado por twetar sobre nós."
+                resposta = "Olá @" + tweet.user.screen_name + ", te pegamos no flagra haha. Você caiu no nosso pente fino e tweetou algo com nosso nome, obrigado por lembrar de nós, ou não hehe."
                 resp = api.update_status(status=resposta, in_reply_to_status_id=tweet.id)
                 print('Resposta ao tweet feito com sucesso.')
 
